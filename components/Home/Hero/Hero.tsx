@@ -26,7 +26,7 @@ const Hero = (props: HeroProps) => {
               GAMPANG BANGET TERNYATA MEMBANGUNKAN RUMAH UNTUK ORANG TUAMU DI
               SURGA
             </h1>
-            <h3 className="text-white font-medium text-[1.5rem] md:text-[1.175rem] xl:text-[2.1rem] mt-20 mb-20 md:mb-12 lg:my-12 text-center lg:text-left lg:max-w-[60%] 2xl:max-w-[70%]">
+            <h3 className="text-white font-[400] text-[1.5rem] md:text-[1.175rem] xl:text-[2.1rem] mt-20 mb-20 md:mb-12 lg:my-12 text-center lg:text-left lg:max-w-[60%] 2xl:max-w-[70%]">
               Caranya gampang lho, dengan klik tombol dibawah ini dan mari ikut
               berkontribusi membangun Masjid dan Pondok Quran Al Muhkim
             </h3>
