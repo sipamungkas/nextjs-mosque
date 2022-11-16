@@ -10,7 +10,7 @@ const Hero = (props: HeroProps) => {
 
   return (
     <section id="hero-section" className="relative">
-      <div className="absolute h-[1200px] w-[800px] md:h-screen md:max-h-[500px] md:w-screen">
+      <div className="absolute h-screen w-full md:h-screen md:max-h-[662px] md:w-screen">
         <Image
           className="object-cover"
           src={image}
