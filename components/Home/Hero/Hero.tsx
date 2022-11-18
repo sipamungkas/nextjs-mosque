@@ -11,7 +11,7 @@ const Hero = (props: HeroProps) => {
 
   return (
     <section id="home" className="relative bg-black">
-      <div className="h-screen w-full md:h-screen md:max-h-[662px] md:w-screen">
+      <div className="h-screen w-full md:h-screen md:max-h-[662px] md:w-[100%]">
         <Image
           className="object-cover absolute"
           src={image}
