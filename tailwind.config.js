@@ -7,7 +7,14 @@ module.exports = {
     "./public/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          orange: "#BC6C25",
+          green: "#606C38",
+        },
+      },
+    },
   },
   plugins: [],
 };
