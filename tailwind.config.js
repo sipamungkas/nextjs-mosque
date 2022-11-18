@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      padding: {
+        "1/2": "50%",
+        full: "100%",
+      },
       colors: {
         primary: {
           orange: "#BC6C25",

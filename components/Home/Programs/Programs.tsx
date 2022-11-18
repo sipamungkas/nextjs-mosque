@@ -1,8 +1,21 @@
-const Programs = (props: any) => {
+import Image from "next/image";
+
+interface ProgramProps {
+  programs: ProgramItemProps[];
+}
+
+interface ProgramItemProps {
+  image: string;
+  title: string;
+  desc: string;
+}
+
+const Programs = (props: ProgramProps) => {
+  const { programs } = props;
   return (
     <section
       id="program"
-      className="container mx-auto mt-16 text-black relative flex items-center flex-col mb-72 px-4 xl:px-0"
+      className="container mx-auto text-black relative flex items-center flex-col mb-72 px-4 xl:px-0 pt-24"
     >
       <h2 className="text-primary-orange text-2xl sm:text-3xl md:text-4xl text-center">
         Program Jariyah Cerdas Al Muhkim
@@ -32,11 +45,33 @@ const Programs = (props: any) => {
           </b>
         </i>{" "}
         (HR. Ibu Majah no. 738)
-        <br />
-        <br />
+      </h3>
+      <h3 className="px-2 font-medium text-lg my-10 text-center">
         Masjid Al Muhkim memiliki visi menjadi terapan peradaban dengan pondasi
         4 pilar.
       </h3>
+      <div className="h-full w-full">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-14">
+          {programs.map((programs) => (
+            <li key={programs.title.toString()}>
+              <div className="pb-full relative rounded-2xl">
+                <Image
+                  alt="program-1"
+                  src={programs.image}
+                  className="h-full w-full object-cover object-center rounded-md md:rounded-xl"
+                  fill
+                />
+              </div>
+              <h4 className="font-medium text-lg my-2 md:mt-6 text-center text-primary-green">
+                {programs.title}
+              </h4>
+              <p className="font-normal text-base text-center">
+                {programs.desc}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
