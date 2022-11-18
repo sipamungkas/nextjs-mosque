@@ -7,7 +7,18 @@ module.exports = {
     "./public/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        "1/2": "50%",
+        full: "100%",
+      },
+      colors: {
+        primary: {
+          orange: "#BC6C25",
+          green: "#606C38",
+        },
+      },
+    },
   },
   plugins: [],
 };
