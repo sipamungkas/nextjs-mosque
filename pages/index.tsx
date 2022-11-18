@@ -33,6 +33,9 @@ const programs = [
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Masjid Al Muhkim | sample by sipamungkas.dev</title>
+      </Head>
       <Navbar logo={Logo} />
       <Hero image={HeroMosque} />
       <Programs programs={programs} />
