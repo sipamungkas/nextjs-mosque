@@ -15,7 +15,7 @@ const Programs = (props: ProgramProps) => {
   return (
     <section
       id="program"
-      className="container mx-auto text-black relative flex items-center flex-col mb-72 px-4 xl:px-0 pt-24"
+      className="container mx-auto text-black relative flex items-center flex-col mb-72 px-4 xl:px-0 pt-20 md:pt-24"
     >
       <h2 className="text-primary-orange text-2xl sm:text-3xl md:text-4xl text-center">
         Program Jariyah Cerdas Al Muhkim
