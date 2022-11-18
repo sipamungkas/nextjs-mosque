@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
 }
 
 @layer base {

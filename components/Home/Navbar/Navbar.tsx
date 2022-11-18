@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -11,15 +11,38 @@ const Navbar = (props: NavbarProps) => {
   const { logo } = props;
 
   const [showNav, setShowNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [background, setBackground] = useState<string>();
 
   const handleNav = () => {
     setShowNav(!showNav);
   };
 
+  const handleMobileMenu = () => {
+    setShowNav(false);
+  };
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+        setBackground("bg-black/90");
+      } else {
+        setBackground("bg-transparent");
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <nav className="fixed w-full h-20 z-[100] ease-in-out duration-300">
-      <div className="flex justify-between items-center w-full h-full px-2 md:px-5 xl:px-16">
-        <Link href={"/#home"}>
+    <nav
+      className={`fixed w-full h-20 z-[100] ease-in-out duration-300 ${background} ${
+        shadow && "shadow-xl"
+      }`}
+    >
+      <div className="container mx-auto flex justify-between items-center h-full px-4 xl:px-0">
+        <Link href={"#home"}>
           <div className="relative h-[60px] md:h-[60px] w-[56px] md:w-[35px]">
             <Image
               className="object-contain"
@@ -30,21 +53,21 @@ const Navbar = (props: NavbarProps) => {
           </div>
         </Link>
         <div>
-          <ul className="hidden md:flex text-white tracking-wide">
+          <ul className={`hidden md:flex text-white tracking-wide`}>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"/#home"}>Home</Link>
+              <Link href={"#home"}>Home</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"/#program"}>Program</Link>
+              <Link href={"#program"}>Program</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"/#dukungan"}>Dukungan</Link>
+              <Link href={"#dukungan"}>Dukungan</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"/#dukungan"}>Progres Pembangunan</Link>
+              <Link href={"#dukungan"}>Progres Pembangunan</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"/#infaq"}>Infaq Sekarang!</Link>
+              <Link href={"#infaq"}>Infaq Sekarang!</Link>
             </li>
           </ul>
 
@@ -66,7 +89,7 @@ const Navbar = (props: NavbarProps) => {
               }`}
             >
               <div className="flex flex-col items-center">
-                <Link href={"/#home"}>
+                <Link onClick={handleMobileMenu} href={"#home"}>
                   <div className="relative h-[80px] md:h-[60px] w-[80px] md:w-[35px]">
                     <Image
                       className="object-contain"
@@ -80,19 +103,29 @@ const Navbar = (props: NavbarProps) => {
 
                 <ul className="flex flex-col items-center md:hidden text-white tracking-wide mt-12">
                   <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link href={"/#home"}>Home</Link>
+                    <Link onClick={handleMobileMenu} href={"#home"}>
+                      Home
+                    </Link>
                   </li>
                   <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link href={"/#program"}>Program</Link>
+                    <Link onClick={handleMobileMenu} href={"#program"}>
+                      Program
+                    </Link>
                   </li>
                   <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link href={"/#dukungan"}>Dukungan</Link>
+                    <Link onClick={handleMobileMenu} href={"#dukungan"}>
+                      Dukungan
+                    </Link>
                   </li>
                   <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link href={"/#dukungan"}>Progres Pembangunan</Link>
+                    <Link onClick={handleMobileMenu} href={"#dukungan"}>
+                      Progres Pembangunan
+                    </Link>
                   </li>
                   <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link href={"/#infaq"}>Infaq Sekarang!</Link>
+                    <Link onClick={handleMobileMenu} href={"#infaq"}>
+                      Infaq Sekarang!
+                    </Link>
                   </li>
                 </ul>
                 <div
