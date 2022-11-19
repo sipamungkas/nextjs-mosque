@@ -20,7 +20,7 @@ const Programs = (props: ProgramProps) => {
       <h2 className="text-primary-orange text-2xl sm:text-3xl md:text-4xl text-center">
         Program Jariyah Cerdas Al Muhkim
       </h2>
-      <span className="w-[100px] min-[450px]:w-[300px] sm:w-[450px] h-[2.5px] border-none bg-primary-green/80 rounded-md mt-2 md:mt-4" />
+      <span className="w-[100px] min-[450px]:w-[300px] sm:w-[450px] lg:w-[600px] h-[4px] border-none bg-primary-green/80 rounded-md mt-2 md:mt-4" />
 
       <h3 className="px-2 font-medium text-lg mt-6 text-center">
         Program Al Muhkim yang sedang ingin kami fokuskan adalah{" "}
