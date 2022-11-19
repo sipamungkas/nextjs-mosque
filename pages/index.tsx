@@ -85,6 +85,7 @@ export default function Home() {
       <Navbar logo={Logo} />
       <Hero image={HeroMosque} />
       <Programs programs={programs} />
+      
       <Support data={supportData} />
     </>
   );

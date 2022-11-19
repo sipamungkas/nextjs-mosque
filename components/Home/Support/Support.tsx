@@ -27,13 +27,14 @@ const Support = (props: SupportProps) => {
   return (
     <section
       id="support"
-      className="container mx-auto px-4 xl:px-0 pt-20 md:pt24"
+      className="container mx-auto px-4 xl:px-0 pt-20 md:pt24 relative flex flex-col items-center"
     >
-      <h2 className="text-primary-orange text-2xl sm:text-3xl md:text-4xl text-center mb-28">
+      <h2 className="text-primary-orange text-2xl sm:text-3xl md:text-4xl text-center">
         Dukungan Mereka ke Al Muhkim
       </h2>
-      <span className="w-[100px] min-[450px]:w-[300px] sm:w-[450px] h-[2.5px] border-none bg-primary-green/80 rounded-md mt-2 md:mt-4" />
-      <div className="h-full w-full">
+      <span className="w-[100px] min-[450px]:w-[300px] sm:w-[450px] lg:w-[600px] h-[4px] border-none bg-primary-green/80 rounded-md mt-2 md:mt-4" />
+
+      <div className="h-full w-full mt-10">
         <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 lg:gap-14">
           {data.map((item) => (
             <li className="group" key={item.title.toString()}>

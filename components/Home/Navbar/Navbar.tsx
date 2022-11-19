@@ -61,10 +61,10 @@ const Navbar = (props: NavbarProps) => {
               <Link href={"#program"}>Program</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"#dukungan"}>Dukungan</Link>
+              <Link href={"#support"}>Dukungan</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"#dukungan"}>Progres Pembangunan</Link>
+              <Link href={"#support"}>Progres Pembangunan</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
               <Link href={"#infaq"}>Infaq Sekarang!</Link>
@@ -113,12 +113,12 @@ const Navbar = (props: NavbarProps) => {
                     </Link>
                   </li>
                   <li className="text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link onClick={handleMobileMenu} href={"#dukungan"}>
+                    <Link onClick={handleMobileMenu} href={"#support"}>
                       Dukungan
                     </Link>
                   </li>
                   <li className="text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link onClick={handleMobileMenu} href={"#dukungan"}>
+                    <Link onClick={handleMobileMenu} href={"#support"}>
                       Progres Pembangunan
                     </Link>
                   </li>
