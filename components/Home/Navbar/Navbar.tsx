@@ -37,13 +37,13 @@ const Navbar = (props: NavbarProps) => {
 
   return (
     <nav
-      className={`fixed w-full h-20 z-[100] ease-in-out duration-300 ${background} ${
+      className={`fixed w-full h-16 md:h-20 z-[100] ease-in-out duration-300 ${background} ${
         shadow && "shadow-xl"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center h-full px-4 xl:px-0">
         <Link href={"#home"}>
-          <div className="relative h-[60px] md:h-[60px] w-[56px] md:w-[35px]">
+          <div className="relative h-[40px] md:h-[60px] w-[40px] md:w-[35px]">
             <Image
               className="object-contain"
               src={logo}
@@ -61,10 +61,10 @@ const Navbar = (props: NavbarProps) => {
               <Link href={"#program"}>Program</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"#dukungan"}>Dukungan</Link>
+              <Link href={"#support"}>Dukungan</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"#dukungan"}>Progres Pembangunan</Link>
+              <Link href={"#support"}>Progres Pembangunan</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
               <Link href={"#infaq"}>Infaq Sekarang!</Link>
@@ -73,7 +73,7 @@ const Navbar = (props: NavbarProps) => {
 
           {/* Humberger Icon Mobile */}
           <div className="md:hidden cursor-pointer" onClick={handleNav}>
-            <AiOutlineMenu color="white" size={30} />
+            <AiOutlineMenu color="white" size={25} />
           </div>
 
           {/* Mobile Menu and Overlay */}
@@ -88,7 +88,7 @@ const Navbar = (props: NavbarProps) => {
                 showNav ? "left-0" : "left-[-100%]"
               }`}
             >
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col h-[100%] items-center justify-between">
                 <Link onClick={handleMobileMenu} href={"#home"}>
                   <div className="relative h-[80px] md:h-[60px] w-[80px] md:w-[35px]">
                     <Image
@@ -101,28 +101,28 @@ const Navbar = (props: NavbarProps) => {
                   </div>
                 </Link>
 
-                <ul className="flex flex-col items-center md:hidden text-white tracking-wide mt-12">
-                  <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
+                <ul className="grid gap-8 text-center md:hidden text-white tracking-wide mt-12">
+                  <li className="text-lg uppercase font-semibold ease-in-out duration-700">
                     <Link onClick={handleMobileMenu} href={"#home"}>
                       Home
                     </Link>
                   </li>
-                  <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
+                  <li className="text-lg uppercase font-semibold ease-in-out duration-700">
                     <Link onClick={handleMobileMenu} href={"#program"}>
                       Program
                     </Link>
                   </li>
-                  <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link onClick={handleMobileMenu} href={"#dukungan"}>
+                  <li className="text-lg uppercase font-semibold ease-in-out duration-700">
+                    <Link onClick={handleMobileMenu} href={"#support"}>
                       Dukungan
                     </Link>
                   </li>
-                  <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link onClick={handleMobileMenu} href={"#dukungan"}>
+                  <li className="text-lg uppercase font-semibold ease-in-out duration-700">
+                    <Link onClick={handleMobileMenu} href={"#support"}>
                       Progres Pembangunan
                     </Link>
                   </li>
-                  <li className="my-8 text-lg uppercase font-semibold ease-in-out duration-700">
+                  <li className="text-lg uppercase font-semibold ease-in-out duration-700">
                     <Link onClick={handleMobileMenu} href={"#infaq"}>
                       Infaq Sekarang!
                     </Link>
