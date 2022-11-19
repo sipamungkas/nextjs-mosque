@@ -28,7 +28,7 @@ const Support = (props: SupportProps) => {
     <>
       <section
         id="support"
-        className="container mx-auto px-4 xl:px-0 pt-20 md:pt24 relative flex flex-col items-center"
+        className="container mx-auto px-4 xl:px-0 pt-20 md:pt24 relative flex flex-col items-center mb-16"
       >
         <h2 className="text-primary-orange text-2xl sm:text-3xl md:text-4xl text-center">
           Dukungan Mereka ke Al Muhkim

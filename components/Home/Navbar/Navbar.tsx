@@ -64,7 +64,7 @@ const Navbar = (props: NavbarProps) => {
               <Link href={"#support"}>Dukungan</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
-              <Link href={"#support"}>Progres Pembangunan</Link>
+              <Link href={"#progress"}>Progres Pembangunan</Link>
             </li>
             <li className="ml-8 lg:ml-10 text-sm uppercase hover:border-0">
               <Link href={"#infaq"}>Infaq Sekarang!</Link>
