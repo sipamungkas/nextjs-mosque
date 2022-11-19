@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import { AiOutlinePlayCircle } from "react-icons/ai";
+import { AiOutlinePlayCircle, AiFillCloseCircle } from "react-icons/ai";
 
 interface SupportProps {
   data: SupportItem[];
@@ -69,10 +69,22 @@ const Support = (props: SupportProps) => {
           className="fixed top-0 left-0 right-0 bottom-0 z-[101] bg-black/60 flex items-center justify-center"
           onClick={() => handleModal("")}
         >
-          <video controls className="cursor-pointer h-[80%] w-auto">
+          <video
+            controls
+            className="cursor-pointer h-[80%] w-auto relative"
+          >
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <div className="h-[80%]">
+            <div className="absolute translate-y-4 sm:translate-y-2 -translate-x-16">
+              <AiFillCloseCircle
+                color="white"
+                size={50}
+                className="opacity-75"
+              />
+            </div>
+          </div>
         </div>
       )}
     </section>
