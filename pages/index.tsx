@@ -8,6 +8,8 @@ import Logo from "../public/assets/images/al-muhkim-60x94.png";
 import Programs from "../components/Home/Programs";
 import Support from "../components/Home/Support";
 import Progress from "../components/Home/Progress";
+import Infaq from "../components/Home/Infaq";
+import Footer from "../components/Home/Footer";
 
 const programs = [
   {
@@ -87,6 +89,16 @@ const progresImages = [
   { title: "Progress Image 1", imageUrl: "/assets/images/progress-7.jpg" },
 ];
 
+const InfaqData = {
+  waNumber: "6285172421278",
+  waText:
+    "Assalamu%27alaikum%20Warahmatullahi%20Wabarakaatuh.Kak%2C%20saya%20mau%20donasi%2C%20bagaimana%20yah%20caranya%3F",
+  image: {
+    title: "Infaq Mosque Background",
+    url: HeroMosque,
+  },
+};
+
 export default function Home() {
   return (
     <>
@@ -98,6 +110,8 @@ export default function Home() {
       <Programs programs={programs} />
       <Support data={supportData} />
       <Progress images={progresImages} />
+      <Infaq detail={InfaqData} />
+      <Footer />
     </>
   );
 }
