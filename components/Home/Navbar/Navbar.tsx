@@ -118,7 +118,7 @@ const Navbar = (props: NavbarProps) => {
                     </Link>
                   </li>
                   <li className="text-lg uppercase font-semibold ease-in-out duration-700">
-                    <Link onClick={handleMobileMenu} href={"#support"}>
+                    <Link onClick={handleMobileMenu} href={"#progress"}>
                       Progres Pembangunan
                     </Link>
                   </li>
