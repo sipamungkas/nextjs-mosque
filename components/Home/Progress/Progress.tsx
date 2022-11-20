@@ -68,7 +68,7 @@ const Progress = (props: ProgressProps) => {
                 key={data.title.toString()}
               >
                 <Image
-                  alt="program-1"
+                  alt={data.title}
                   src={data.imageUrl}
                   className="h-full w-full object-cover object-center rounded-md md:rounded-xl"
                   fill

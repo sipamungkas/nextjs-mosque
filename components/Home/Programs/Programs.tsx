@@ -56,10 +56,11 @@ const Programs = (props: ProgramProps) => {
             <li key={programs.title.toString()}>
               <div className="pb-full relative rounded-2xl">
                 <Image
-                  alt="program-1"
+                  alt="program masjid al muhkim"
                   src={programs.image}
                   className="h-full w-full object-cover object-center rounded-md md:rounded-xl"
                   fill
+                  loading="lazy"
                 />
               </div>
               <h4 className="font-medium text-lg my-2 md:mt-6 text-center text-primary-green">

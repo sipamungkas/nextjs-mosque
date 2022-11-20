@@ -48,6 +48,7 @@ const Support = (props: SupportProps) => {
                     src={item.thumbnail}
                     className="h-full w-full object-cover object-center rounded-md md:rounded-xl"
                     fill
+                    loading="lazy"
                   />
                   <div className="absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]">
                     <AiOutlinePlayCircle
