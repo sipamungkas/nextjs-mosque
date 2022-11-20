@@ -11,6 +11,20 @@ html {
   box-sizing: border-box;
 }
 
+.swiper-pagination .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.7;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #bc6c25 !important;
+  opacity: 1;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #bc6c25 !important;
+}
+
 @layer base {
   h1,
   h2,

@@ -31,7 +31,7 @@ const Hero = (props: HeroProps) => {
               Caranya gampang lho, dengan klik tombol dibawah ini dan mari ikut
               berkontribusi membangun Masjid dan Pondok Quran Al Muhkim
             </h3>
-            <button className="bg-primary-orange hover:bg-green-900 text-white font-medium py-3 px-5 md:py-2 md:px-4 rounded flex mx-auto lg:mx-0 items-center justify-center">
+            <button className="bg-primary-orange text-white font-medium py-3 px-5 md:py-2 md:px-4 lg:py-3 rounded-lg flex mx-auto lg:mx-0 items-center justify-center">
               Berinfaq Sekarang{" "}
               <AiOutlineArrowDown className="ml-2" size={20} />
             </button>
