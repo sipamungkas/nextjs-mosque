@@ -34,7 +34,7 @@ const Progress = (props: ProgressProps) => {
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           className="container"
           spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={"auto"}
           loop
           breakpoints={{
             320: {
@@ -45,12 +45,19 @@ const Progress = (props: ProgressProps) => {
               slidesPerView: 3,
               spaceBetween: 50,
             },
+            1024: {
+              slidesPerView: 4,
+            },
+            1440: {
+              slidesPerView: 5,
+            },
           }}
           pagination={{
             clickable: true,
             type: "bullets",
             bulletClass: `swiper-pagination-bullet`,
           }}
+          navigation
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
