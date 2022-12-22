@@ -26,7 +26,7 @@ const Navbar = (props: NavbarProps) => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
-        setBackground("bg-black/90");
+        setBackground("bg-black/70");
       } else {
         setBackground("bg-transparent");
         setShadow(false);
@@ -38,7 +38,7 @@ const Navbar = (props: NavbarProps) => {
   return (
     <nav
       className={`fixed w-full h-16 md:h-20 z-[100] ease-in-out duration-300 ${background} ${
-        shadow && "shadow-xl"
+        shadow && "shadow-xl backdrop-blur"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center h-full px-4 xl:px-0">
@@ -79,7 +79,7 @@ const Navbar = (props: NavbarProps) => {
           {/* Mobile Menu and Overlay */}
           <div
             className={`md:hidden fixed top-0 w-full h-screen bg-black/90 duration-300 ${
-              showNav ? "left-0" : "left-[-100%]"
+              showNav ? "left-0" : "left-[-100%] backdrop-blur"
             }`}
           >
             {/* Drawer Menu */}
