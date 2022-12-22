@@ -19,7 +19,7 @@ const Infaq = (props: InfaqProps) => {
   const { detail } = props;
   return (
     <section id="infaq" className="relative bg-black">
-      <div className="py-16 md:py-20 min-h-[calc(1024px+6rem)] md:min-h-[100vh+1rem] xl:min-h-[80vh]">
+      <div className="py-16 md:py-20">
         <Image
           className="object-cover absolute"
           src={detail.image.url}
@@ -29,7 +29,7 @@ const Infaq = (props: InfaqProps) => {
           priority
         />
         <div className="absolute top-0 right-0 left-0 bottom-0 opacity-70 bg-black" />
-        <div className="absolute top-0 right-0 left-0 bottom-0 flex flex-col w-full px-4 xl:px-0 items-center justify-center">
+        <div className="relative flex flex-col w-full px-4 xl:px-0 items-center justify-center">
           <div className="container mx-auto items-center justify-center tracking-wider">
             <h1 className="text-white text-3xl sm:text-4xl md:text-5xl text-center w-full opacity-100 font-bold">
               Jangan Sia-siakan Kesempatan Cemerlang Ini
