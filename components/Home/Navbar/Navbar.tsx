@@ -79,7 +79,7 @@ const Navbar = (props: NavbarProps) => {
           {/* Mobile Menu and Overlay */}
           <div
             className={`md:hidden fixed top-0 w-full h-screen bg-black/90 duration-300 ${
-              showNav ? "left-0" : "left-[-100%] backdrop-blur"
+              showNav ? "left-0" : "left-[-100%]"
             }`}
           >
             {/* Drawer Menu */}
