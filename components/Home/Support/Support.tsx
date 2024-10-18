@@ -94,7 +94,7 @@ const Support = (props: SupportProps) => {
           yang tak sedikit. Namun, ini tak menghentikan niat kita untuk memulai
           langkah kecil yang bermanfaat seperti membangun Masjid Al Muhkim.
           Masjid ini juga akan menjadi fasilitas Para Santri Penghafal
-          Al-Qur&apost;an dikader menjadi da&apost;i di bidangnya masing-masing.
+          Al-Qur&apost;an dikader menjadi Da&apost;i di bidangnya masing-masing.
           <br /> <br />{" "}
           <b>
             Tantangannya adalah, tentu Kita sama-sama paham bahwa membangun
